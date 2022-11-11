@@ -48,6 +48,10 @@ INSTALLED_APPS = [
     "apis",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://collegemgmt.herokuapp.com'
+]
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
