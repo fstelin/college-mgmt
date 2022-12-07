@@ -24,16 +24,21 @@
 
   </head>
 
-  <body class="bg-blue">
-
-    <div class="container">
+  <body class="bg-blue"style="background-image: url('{% static 'info/images/bck.jpg' %}'); background-size: cover; height:740px; padding-top:20px;">
+    <div class="topnav">
+      <a class="active" href="/accounts/login">Home</a>
+      <a href="/accounts/login">Admin</a>
+      <a href="/accounts/login">Student</a>
+      <a href="/accounts/login">Teacher</a>
+    </div>
+    <div class="container" >
       <div class="card card-login mx-auto mt-5">
         <div class="card-header">Login</div>
         <div class="card-body">
             <form method="post">
               {% csrf_token %}
               {{ form.as_p }}
-              <button  class="btn btn-success" type="submit">Login</button>
+              <button  class="btn btn-success" type="submit" style="background-color:black;">Login</button>
             </form>
 
         </div>
